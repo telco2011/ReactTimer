@@ -2,6 +2,14 @@ var webpackConfig = require('./webpack.config.js');
 
 module.exports = function (config) {
   config.set({
+    // Start these browsers, currently available:
+      // - Chrome
+      // - ChromeCanary
+      // - Firefox
+      // - Opera
+      // - Safari (only Mac)
+      // - PhantomJS
+      // - IE (only Windows)  
     browsers: ['Chrome'],
     singleRun: true,
     frameworks: ['mocha'],
@@ -12,7 +20,7 @@ module.exports = function (config) {
     reporters: ['mocha'],
     client: {
       mocha: {
-        timeout: '10000'
+        timeout: '5000'
       }
     },
     webpack: webpackConfig,
