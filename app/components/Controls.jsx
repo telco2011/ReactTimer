@@ -1,7 +1,7 @@
 var React = require('react');
 
 var Controls = React.createClass({
-  proptypes: {
+  propTypes: {
     countdownStatus: React.PropTypes.string.isRequired,
     onStatusChange: React.PropTypes.func.isRequired
   },
